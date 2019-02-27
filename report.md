@@ -9,13 +9,12 @@ The Goal of the agent is to play tennis
 ## Environment Info
 
 - `Number of agents: 2`<br>
-- `Number of actions: 2`<br>
-- `State Length : 24 (Every Agent)` <br>
+- `Number of actions: 2 Continuous (Moving From Net and Jumping)`<br>
+- `State Length : 24 (For Each Agent)` <br>
 
 ## Benchmark 
 Reward from each agent is added without discounting and max award (from both agents) is set as episode reward<br>
 The problem is considered solved when the agents achieve average reward of 0.50+ over 100 consecutive episodes
-
 
 
 ## Parameter Values
