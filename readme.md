@@ -4,9 +4,17 @@ DDPG Agent solving Unity Tennis Environment
 ## Environment Info
 
 - `Number of agents: 2`<br>
-- `Number of actions: 2`<br>
-- `State Length : 24 (Every Agent)` <br>
+- `Number of actions: 2 Continuous (Moving Away/Closer to Net and Jumping)`<br>
+- `State Length : 24 (For Each Agent)` <br>
 - `Environment Solved: 1303 episodes (avg 0.50)`
+
+## Reward Function
+In this environment, two agents control rackets to bounce a ball over a net. If an agent hits the ball over the net, it receives a reward of +0.1. If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01. Thus, the goal of each agent is to keep the ball in play.
+
+## Benchmark 
+Reward from each agent is added without discounting and max award (from both agents) is set as episode reward<br>
+The problem is considered solved when the agents achieve average reward of 0.50+ over 100 consecutive episodes
+
 
 ## Requirements Linux/Mac/Windows
 
